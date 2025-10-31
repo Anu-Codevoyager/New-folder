@@ -5,7 +5,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   const correctDate = "07-09-2025";
 
   if (date === correctDate) {
-    window.location.href = "main.html";
+     window.location.href = "main.html";
   } else {
     alert("Oops 🌸 That’s not the right date, try again!");
   }

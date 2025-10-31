@@ -3,13 +3,13 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background: radial-gradient(circle at top, #0d001a, #000);
-  color: #fff;
+   color: #fff;
   overflow-x: hidden;
 }
 
 /* Sparkling background */
 .sparkle-bg {
-  position: fixed;
+   position: fixed;
   inset: 0;
   background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1), transparent 70%);
   animation: twinkle 5s infinite alternate;

@@ -212,7 +212,7 @@ body::before {
 
 /* --- Photo Gallery Button --- */
 .gallery-btn {
-  display: inline-block;
+   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
   background: linear-gradient(45deg, #ff4b2b, #ff416c);

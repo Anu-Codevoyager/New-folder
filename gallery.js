@@ -29,4 +29,4 @@ style.innerHTML = `
     to { transform: translateY(-110vh) scale(0.3); opacity: 0; }
   }
 `;
-document.head.appendChild(style);
+ document.head.appendChild(style);
