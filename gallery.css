@@ -14,7 +14,7 @@ body {
   background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1), transparent 70%);
   animation: twinkle 5s infinite alternate;
   pointer-events: none;
-  z-index: 0;
+   z-index: 0;
 }
 
 @keyframes twinkle {
