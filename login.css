@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body {
+  animation: pageFade 2s ease;
+}
+
+@keyframes pageFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom right, #ffe6f0, #ffd6e8);
+  overflow: hidden;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Layout */
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  z-index: 2;
+}
+
+/* Rose image */
+.bouquet-img {
+  width: 380px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 182, 193, 0.4);
+  transition: transform 0.4s ease;
+}
+
+.bouquet-img:hover {
+  transform: scale(1.03);
+}
+
+/* Glass login box */
+.login-box {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+  padding: 50px 45px;
+  width: 350px;
+  box-shadow: 0 8px 40px rgba(255, 182, 193, 0.3), 0 0 30px rgba(255, 182, 193, 0.2);
+  text-align: center;
+  animation: fadeIn 1.2s ease;
+}
+
+.login-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 45px;
+  color: #c2185b;
+  margin-bottom: 10px;
+}
+
+.login-sub {
+  font-size: 14px;
+  color: #6d6d6d;
+  margin-bottom: 25px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-box input:focus {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(194, 24, 91, 0.2);
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #c2185b;
+  border: none;
+  color: white;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-box button:hover {
+  background-color: #d63384;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.6);
+}
+
+
+.hint {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #5c95ff; /* cheerful soft pink */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-shadow: 0 0 5px rgba(255, 192, 203, 0.3);
+}
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #c2185b;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+  text-shadow: 0 0 8px rgba(255, 182, 193, 0.4);
+}
+
+
+/* Floating hearts container */
+.floating-hearts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Each heart */
+.heart {
+  position: absolute;
+  bottom: -20px;
+  font-size: 20px;
+  color: #ff6fa5;
+  opacity: 0.7;
+  animation: floatUp linear infinite;
+  pointer-events: none;
+}
+
+.page-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 42px;
+  color: #c25118;
+  position: absolute;
+  top: 40px;
+  text-shadow: 0 2px 8px rgba(255, 182, 193, 0.5);
+}
+
+
+/* Float animation */
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-50vh) scale(1.2);
+  }
+  100% {
+    transform: translateY(-100vh) scale(0.8);
+    opacity: 0;
+  }
+}
